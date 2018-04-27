@@ -1,39 +1,37 @@
-var Discord = require('discord.io');
-var logger = require('winston');
-var auth = require('./auth.json')
+const auth = require('./auth.json')
+const config = require('./config.json')
+const fs = require('fs')
+const Discord = require('discord.js');
 
-// configure logger settings
-logger.remove(logger.transports.Console);
-logger.add(logger.transports.Console, {
-  colorize: true
-});
-logger.level = 'debug';
+const bot = new Discord.Client();
 
-// initialize Discord bot
-var bot = new Discord.Client({
-  token: auth.token,
-  autorun: true
+bot.on("ready", () => {
+  console.log("I am ready!");
 });
-bot.on('ready', function(evt) {
-  logger.info('Connected');
-  logger.info('Logged in as: ');
-  logger.info(bot.username + ' - (' + bot.id + ')');
-});
-bot.on('message', function(user, userID, channelID, message, evt) {
-  // listen for commands that start with '!'
-  if(message.substring(0, 1) == '!') {
-    var args = message.substring(1).split(' ');
-    var cmd = args[0];
 
-    args = args.splice(1);
-    switch(cmd) {
-      // !ping
-      case 'ping':
-        bot.sendMessage({
-          to: channelID,
-          message: 'Pong!'
-        });
+bot.on("message", (message) => {
+  // ignore messages that do not start with the command prefix
+  // also, ignore messages sent by other bots
+  if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+
+  // split the message into the command and arguments
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+
+  switch(command) {
+    // change the command prefix
+    case "prefix":
+      // only allow the owner to execute this command
+      if(message.author.id !== config.ownerID) return;
+      // get the new prefix from the command
+      let newPrefix = message.content.split(' ').slice(1, 2)[0];
+      // change the configuration in memory
+      config.prefix = newPrefix;
+      // save the new configuration
+      fs.writeFile('./config.json', JSON.stringify(config), (err) => console.error);
       break;
-    }
   }
+
 });
+
+bot.login(auth.token);
