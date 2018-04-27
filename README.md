@@ -8,6 +8,9 @@ To use this bot, you will need to create a file `auth.json` which contains the f
 
 ```json
 {
-        "token" : "your bot auth token"
+    "token" : "your bot auth token",
+    "userID" : "your user ID token"
 }
 ```
+
+Certain commands are restricted (e.g., `prefix`, which allows a user to change the command prefix) to only the user with the user ID matching the contents of `auth.userID`.
