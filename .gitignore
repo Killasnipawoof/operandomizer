@@ -1,2 +1,5 @@
 # Ignore file containing the bot auth token
 auth.json
+
+# Ignore node modules
+node_modules/
