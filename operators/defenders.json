@@ -1,0 +1,16 @@
+{
+  "other" : [ "Recruit" ],
+  "sas" : [ "Smoke", "Mute" ],
+  "fbi" : [ "Castle", "Pulse" ],
+  "gign" : [ "Doc", "Rook" ],
+  "spetsnaz" : [ "Kapkan", "Tachanka" ],
+  "gsg9" : [ "Jäger", "Bandit" ],
+  "jtf2" : [ "Frost" ],
+  "seals" : [ "Valkyrie" ],
+  "bope" : [ "Caviera" ],
+  "sat" : [ "Echo" ],
+  "geo" : [ "Mira" ],
+  "sdu" : [ "Lesion" ],
+  "grom" : [ "Ela" ],
+  "smb" : [ "Vigil" ]
+}
