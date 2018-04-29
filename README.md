@@ -13,7 +13,7 @@ To use this bot, you will need to create a file `config.json` which contains the
 }
 ```
 
-Certain commands are restricted (e.g., `prefix`, which allows a user to change the command prefix) to only the user with the user ID matching the contents of `auth.userID`.
+Certain commands are restricted (e.g., `prefix`, which allows a user to change the command prefix) to only the user with the user ID matching the contents of `config.ownerID`.
 
 Additionally, you must install dependencies with `npm install`.
 
