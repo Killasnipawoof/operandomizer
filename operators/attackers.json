@@ -1,0 +1,17 @@
+{
+  "other" : [ "Recruit" ],
+  "sas" : [ "Sledge", "Thatcher" ],
+  "fbi" : [ "Ash", "Thermite" ],
+  "gign" : [ "Twitch", "Montagne" ],
+  "spetsnaz" : [ "Glaz", "Fuze" ],
+  "gsg9" : [ "Blitz", "IQ" ],
+  "jtf2" : [ "Buck" ],
+  "seals" : [ "Blackbeard" ],
+  "bope" : [ "Capitão" ],
+  "sat" : [ "Hibana" ],
+  "geo" : [ "Jackal" ],
+  "sdu" : [ "Ying" ],
+  "grom" : [ "Zofia" ],
+  "smb" : [ "Dokkaebi" ],
+  "cbrn" : [ "Lion", "Finka" ]
+}

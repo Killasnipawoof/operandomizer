@@ -1,9 +1,11 @@
 const Discord = require('discord.js');
 
 Client = {
+  fs: require('fs'),
   config: require('./config.json'),
   auth: require('./auth.json'),
-  fs: require('fs'),
+  attackers: require('./operators/attackers.json'),
+  defenders: require('./operators/defenders.json'),
   bot: new Discord.Client()
 }
 
@@ -21,7 +23,7 @@ Client.bot.on("message", (message) => {
   const args = message.content.slice(Client.config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
-  console.log("Received command: " + command + " " + args);
+  console.log("\nReceived command: " + command + " " + args);
 
   // simple command handler
   try {
@@ -29,7 +31,7 @@ Client.bot.on("message", (message) => {
     commandFile.run(Client, message, args);
   } catch (err) {
     console.error(err);
-    message.channel.send("'" + Client.config.prefix + command + "' is not a recognized command.");
+    message.channel.send("Encountered an error executing '" + Client.config.prefix + command + "'.");
   }
 });
 
