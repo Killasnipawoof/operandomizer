@@ -1,35 +1,42 @@
-const auth = require('./auth.json')
-const config = require('./config.json')
+// const auth = require('./auth.json')
+// const config = require('./config.json')
 
-const fs = require('fs')
+// const fs = require('fs')
 const Discord = require('discord.js');
 
-const bot = new Discord.Client();
+// const bot = new Discord.Client();
 
-bot.on("ready", () => {
+Client = {
+  config: require('./config.json'),
+  auth: require('./auth.json'),
+  fs: require('fs'),
+  bot: new Discord.Client()
+}
+
+Client.bot.on("ready", () => {
   console.log("Operandomizer is ready.");
 });
 
-bot.on("message", (message) => {
+Client.bot.on("message", (message) => {
   // ignore messages sent by bots
   if (message.author.bot) return;
   // ignore messages not starting with the command prefix
-  if (!message.content.startsWith(config.prefix)) return;
+  if (!message.content.startsWith(Client.config.prefix)) return;
 
   // split the message into the command and arguments
-  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const args = message.content.slice(Client.config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
-  console.log("Received command: " + command);
+  console.log("Received command: " + command + " " + args);
 
   // simple command handler
   try {
     let commandFile = require('./commands/' + command + '.js');
-    commandFile.run(bot, message, args);
+    commandFile.run(Client, message, args);
   } catch (err) {
     console.error(err);
-    message.channel.send("'" + config.prefix + command + "' is not a recognized command.");
+    message.channel.send("'" + Client.config.prefix + command + "' is not a recognized command.");
   }
 });
 
-bot.login(auth.token);
+Client.bot.login(Client.auth.token);
