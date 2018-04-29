@@ -10,6 +10,12 @@ Client = {
 }
 
 Client.bot.on("ready", () => {
+  Client.bot.user.setPresence({
+    game: {
+      name: "say " + Client.config.prefix + "help",
+      type: 0
+    }
+  });
   console.log("Operandomizer is ready.");
 });
 

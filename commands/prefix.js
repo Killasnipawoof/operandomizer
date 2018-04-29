@@ -11,6 +11,14 @@ exports.run = (client, message, args) => {
   // change the configuration in memory
   client.config.prefix = newPrefix;
 
+  // update the client status with the new prefix
+  client.bot.user.setPresence({ 
+    game: {
+      name: "say " + Client.config.prefix + "help",
+      type: 0
+    }
+  });
+
   // save the new configuration
   client.fs.writeFile('./config.json', JSON.stringify(client.config), (err) => console.error);
   message.channel.send("Command prefix is now: " + client.config.prefix);
