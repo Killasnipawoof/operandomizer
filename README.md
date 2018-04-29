@@ -9,7 +9,7 @@ To use this bot, you will need to create a file `auth.json` which contains the f
 ```json
 {
     "token" : "your bot auth token",
-    "userID" : "your user ID token"
+    "ownerID" : "your user ID token"
 }
 ```
 
