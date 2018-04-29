@@ -3,7 +3,6 @@ const Discord = require('discord.js');
 Client = {
   fs: require('fs'),
   config: require('./config.json'),
-  auth: require('./auth.json'),
   attackers: require('./operators/attackers.json'),
   defenders: require('./operators/defenders.json'),
   bot: new Discord.Client()
@@ -41,4 +40,4 @@ Client.bot.on("message", (message) => {
   }
 });
 
-Client.bot.login(Client.auth.token);
+Client.bot.login(Client.config.token);

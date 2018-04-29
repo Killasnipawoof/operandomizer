@@ -2,12 +2,14 @@
 A Discord bot to randomly select an operator from "Tom Clancy's Rainbow Six: Siege".
 
 ## Setup
-To use this bot, you will need to create a file `auth.json` which contains the following:
+To use this bot, you will need to create a file `config.json` which contains the following:
 
 ```json
 {
     "token" : "your bot auth token",
-    "ownerID" : "your user ID token"
+    "ownerID" : "your user ID token",
+    "prefix" : "command prefix (recommend '!')",
+    "selection" : "operator selection message (e.g., 'I recommend you play')"
 }
 ```
 

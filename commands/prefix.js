@@ -1,6 +1,6 @@
 exports.run = (client, message, args) => {
   // only allow the owner to execute this command
-  if(message.author.id !== client.auth.ownerID) {
+  if(message.author.id !== client.config.ownerID) {
     message.channel.send("Only the bot owner may change the command prefix.");
     return;
   }
@@ -12,7 +12,7 @@ exports.run = (client, message, args) => {
   client.config.prefix = newPrefix;
 
   // update the client status with the new prefix
-  client.bot.user.setPresence({ 
+  client.bot.user.setPresence({
     game: {
       name: "say " + Client.config.prefix + "help",
       type: 0
