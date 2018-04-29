@@ -1,10 +1,4 @@
-// const auth = require('./auth.json')
-// const config = require('./config.json')
-
-// const fs = require('fs')
 const Discord = require('discord.js');
-
-// const bot = new Discord.Client();
 
 Client = {
   config: require('./config.json'),
