@@ -1,18 +1,18 @@
 # Operandomizer
 A Discord bot to randomly select an operator from "Tom Clancy's Rainbow Six:
-Siege".
+  Siege".
 
 ## Adding this bot to your server
 I have deployed this bot to a free-tier Heroku account.
 To add this bot to your server, visit
 `https://discordapp.com/oauth2/authorize?client_id=439500818320719882&scope=bot`.
 
-Note that a free-tier Heroku account only receives 550 hours of uptime per
-month, so expect the bot to be up for approximately 21 days per month.
+Note that a free-tier Heroku account only receives 550 hours (approx. 21 days)
+  of uptime per month.
 
-## Using this bot locally
-After cloning this repository, to use this bot locally you will need to create
-`config.json` which contains the following:
+## Forking this project
+After cloning this repository (or a fork of it), to use this bot locally you
+  will need to create `config.json` which contains the following:
 
 ```json
 {
@@ -34,7 +34,7 @@ The bot can then be started with `node bot.js`.
 ## Commands
 The following is a table of commands and help text.
 Note that commands that take `CTUs` (Optional) as an argument can be given
-`default` as a CTU, which specifies all of the default CTUs.
+  `default` as a CTU, which specifies all of the default CTUs.
 
 | Command | Arguments | Text |
 | ------- |:---------:| ---- |
@@ -66,4 +66,5 @@ Note that *Recruit* has a CTU code of `other`.
 
 
 ## Copyright Information
-Tom Clancy’s, Rainbow Six, the Soldier Icon, Uplay, the Uplay logo, Ubi.com, Ubisoft, and the Ubisoft logo are trademarks of Ubisoft Entertainment in the US and/or other countries.
+Tom Clancy’s, Rainbow Six, the Soldier Icon, Uplay, the Uplay logo, Ubi.com, Ubisoft, and the Ubisoft
+  logo are trademarks of Ubisoft Entertainment in the US and/or other countries.
