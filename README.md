@@ -5,8 +5,7 @@ Siege".
 ## Adding this bot to your server
 I have deployed this bot to a free-tier Heroku account.
 To add this bot to your server, visit
-`https://discordapp.com/oauth2/authorize?client_id=CLIENTID&scope=bot`
-where `CLIENTID` is `439500818320719882`.
+`https://discordapp.com/oauth2/authorize?client_id=439500818320719882&scope=bot`.
 
 Note that a free-tier Heroku account only receives 550 hours of uptime per
 month, so expect the bot to be up for approximately 21 days per month.
@@ -41,12 +40,8 @@ Note that commands that take `CTUs` (Optional) as an argument can be given
 | ------- |:---------:| ---- |
 | `ping`  | N/A       | Reply in the same channel with `pong!`
 | `prefix`| `newPrefix` | Change the command prefix to match `newPrefix`
-| `atk`   | CTU code(s) (Optional) | Reply in the same channel with the name of
-a random Attack operator selected from the given CTUs (or from all CTUs if none
-  are specified)
-| `def`   | CTU code(s) (Optional) | Reply in the same channel with the name of
-a random Defense operator selected from the given CTUs (or from all CTUs if none
-   are specified)
+| `atk`   | CTU code(s) (Optional) | Reply in the same channel with the name of a random Attack operator selected from the given CTUs (or from all CTUs if none are specified)
+| `def`   | CTU code(s) (Optional) | Reply in the same channel with the name of a random Defense operator selected from the given CTUs (or from all CTUs if none are specified)
 
 ## CTUs
 The following is a table of CTUs and the corresponding codes used in the `atk` and `def` commands.
