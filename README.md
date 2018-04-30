@@ -33,8 +33,8 @@ The bot can then be started with `node bot.js`.
 
 ## Commands
 The following is a table of commands and help text.
-Note that commands that take `CTUs` (Optional) as an argument can be given
-  `default` as a CTU, which specifies all of the default CTUs.
+Note that commands that take CTU code(s) (Optional) as an argument can be given
+  `default` as a CTU, which specifies all of the default CTUs (SAS, FBI SWAT, GIGN, Spetsnaz, GSG 9, and Recruit).
 
 | Command | Arguments | Text |
 | ------- |:---------:| ---- |
