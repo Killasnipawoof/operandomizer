@@ -49,7 +49,6 @@ Note that commands that take CTU code(s) (Optional) as an argument can be given
 
 | Command | Arguments | Text |
 | ------- |:---------:| ---- |
-| `!ping`  | N/A       | Reply in the same channel with `pong!`
 | `!prefix`| `newPrefix` | Change the command prefix to match `newPrefix`
 | `!atk`   | CTU code(s) (Optional) | Reply in the same channel with the name of a random Attack operator selected from the given CTUs (or from all CTUs if none are specified)
 | `!def`   | CTU code(s) (Optional) | Reply in the same channel with the name of a random Defense operator selected from the given CTUs (or from all CTUs if none are specified)
