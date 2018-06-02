@@ -49,9 +49,11 @@ Note that commands that take CTU code(s) (Optional) as an argument can be given
 
 | Command | Arguments | Text |
 | ------- |:---------:| ---- |
-| `!prefix`| `newPrefix` | Change the command prefix to match `newPrefix`
 | `!atk`   | CTU code(s) (Optional) | Reply in the same channel with the name of a random Attack operator selected from the given CTUs (or from all CTUs if none are specified)
 | `!def`   | CTU code(s) (Optional) | Reply in the same channel with the name of a random Defense operator selected from the given CTUs (or from all CTUs if none are specified)
+| `!help` | N/A | Reply in a DM with some simple instructions and a link to this page
+| `!prefix`| `newPrefix` | Change the command prefix to match `newPrefix`
+| `!version` | N/A | Reply in the same channel with the bot's version number
 
 ## CTU Codes
 The following is a table of CTUs and the corresponding codes used in the `atk` and `def` commands.
