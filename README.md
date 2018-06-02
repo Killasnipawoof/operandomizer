@@ -5,19 +5,17 @@ A Discord bot to randomly select an operator from "Tom Clancy's Rainbow Six:
 ## Adding this bot to your server
 I have deployed this bot to a free-tier Heroku account.
 To add this bot to your server, visit
-`https://discordapp.com/oauth2/authorize?client_id=439500818320719882&scope=bot`.
+[https://discordapp.com/oauth2/authorize?client_id=439500818320719882&scope=bot](https://discordapp.com/oauth2/authorize?client_id=439500818320719882&scope=bot).
 
 Note that a free-tier Heroku account only receives 550 hours (approx. 21 days)
   of uptime per month.
 
-## Example usage
-To get a random attacker from any CTU, use the command `atk`.
+## Using this bot
+To get a random attacker from any CTU, say `!atk`.
 
-To get a random attacker from only the default CTUs (SAS, FBI SWAT, GIGN, Spetsnaz, and GSG 9), use the command `atk default`.
+To get a random attacker from only the default CTUs (SAS, FBI SWAT, GIGN, Spetsnaz, and GSG 9), say `!atk default`.
 
-To get a random attacker from either the Navy SEALs, BOPE, GIGN, or SAT, use `atk seals bope gign sat`
-
-The same applies for defenders.
+To get a random defender from either the Navy SEALs, BOPE, GIGN, or SAT, say `!def seals bope gign sat`
 
 For additional CTU codes, please see [CTU codes](#ctu-codes)
 
@@ -51,17 +49,17 @@ Note that commands that take CTU code(s) (Optional) as an argument can be given
 
 | Command | Arguments | Text |
 | ------- |:---------:| ---- |
-| `ping`  | N/A       | Reply in the same channel with `pong!`
-| `prefix`| `newPrefix` | Change the command prefix to match `newPrefix`
-| `atk`   | CTU code(s) (Optional) | Reply in the same channel with the name of a random Attack operator selected from the given CTUs (or from all CTUs if none are specified)
-| `def`   | CTU code(s) (Optional) | Reply in the same channel with the name of a random Defense operator selected from the given CTUs (or from all CTUs if none are specified)
+| `!ping`  | N/A       | Reply in the same channel with `pong!`
+| `!prefix`| `newPrefix` | Change the command prefix to match `newPrefix`
+| `!atk`   | CTU code(s) (Optional) | Reply in the same channel with the name of a random Attack operator selected from the given CTUs (or from all CTUs if none are specified)
+| `!def`   | CTU code(s) (Optional) | Reply in the same channel with the name of a random Defense operator selected from the given CTUs (or from all CTUs if none are specified)
 
 ## CTU Codes
 The following is a table of CTUs and the corresponding codes used in the `atk` and `def` commands.
-Note that *Recruit* has a CTU code of `other`.
 
 | CTU | Code |
 | --- | ---- |
+| Recruit | `other`
 | SAS | `sas`
 | FBI SWAT | `fbi`
 | GIGN | `gign`
