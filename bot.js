@@ -3,18 +3,25 @@ const Discord = require('discord.js');
 Client = {
   fs: require('fs'),
   config: require('./config.json'),
+  version: 0,
   attackers: require('./operators/attackers.json'),
   defenders: require('./operators/defenders.json'),
   bot: new Discord.Client()
 }
 
 Client.bot.on("ready", () => {
+  // load version info
+  p = require('./package.json');
+  Client.version = p.version;
+  delete p;
+  // set presence
   Client.bot.user.setPresence({
     game: {
       name: "say " + Client.config.prefix + "help",
       type: 0
     }
   });
+  // log ready
   console.log("Operandomizer is ready.");
 });
 

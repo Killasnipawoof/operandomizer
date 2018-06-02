@@ -1,6 +1,6 @@
 {
   "name": "operandomizer",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "Randomly selects an operator from 'Tom Clancy's Rainbow Six: Siege'",
   "main": "bot.js",
   "author": "5donuts",
