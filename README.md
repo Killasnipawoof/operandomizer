@@ -12,7 +12,7 @@ Note that a free-tier Heroku account only receives 550 hours (approx. 21 days)
 
 ## Forking this project
 After cloning this repository (or a fork of it), to use this bot locally you
-  will need to create `config.json` which contains the following:
+  will need to create `config.json` which must contain the following:
 
 ```json
 {
@@ -22,6 +22,8 @@ After cloning this repository (or a fork of it), to use this bot locally you
     "selection" : "operator selection message (e.g., 'I recommend you play')"
 }
 ```
+
+See `sample-config.json` for an example.
 
 Certain commands are restricted (e.g., `prefix`, which allows a user to change
   the command prefix) to only the user with the user ID matching the contents
