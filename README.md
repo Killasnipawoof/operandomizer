@@ -10,6 +10,17 @@ To add this bot to your server, visit
 Note that a free-tier Heroku account only receives 550 hours (approx. 21 days)
   of uptime per month.
 
+## Example usage
+To get a random attacker from any CTU, use the command `atk`.
+
+To get a random attacker from only the default CTUs (SAS, FBI SWAT, GIGN, Spetsnaz, and GSG 9), use the command `atk default`.
+
+To get a random attacker from either the Navy SEALs, BOPE, GIGN, or SAT, use `atk seals bope gign sat`
+
+The same applies for defenders.
+
+For additional CTU codes, please see [CTU codes](#ctu-codes)
+
 ## Forking this project
 After cloning this repository (or a fork of it), to use this bot locally you
   will need to create `config.json` which must contain the following:
@@ -45,7 +56,7 @@ Note that commands that take CTU code(s) (Optional) as an argument can be given
 | `atk`   | CTU code(s) (Optional) | Reply in the same channel with the name of a random Attack operator selected from the given CTUs (or from all CTUs if none are specified)
 | `def`   | CTU code(s) (Optional) | Reply in the same channel with the name of a random Defense operator selected from the given CTUs (or from all CTUs if none are specified)
 
-## CTUs
+## CTU Codes
 The following is a table of CTUs and the corresponding codes used in the `atk` and `def` commands.
 Note that *Recruit* has a CTU code of `other`.
 
