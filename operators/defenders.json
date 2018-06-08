@@ -12,5 +12,6 @@
   "geo" : [ "Mira" ],
   "sdu" : [ "Lesion" ],
   "grom" : [ "Ela" ],
-  "smb" : [ "Vigil" ]
+  "smb" : [ "Vigil" ],
+  "gis" : [ "Maestro", "Alibi" ]
 }
