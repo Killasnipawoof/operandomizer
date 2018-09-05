@@ -13,5 +13,6 @@
   "sdu" : [ "Lesion" ],
   "grom" : [ "Ela" ],
   "smb" : [ "Vigil" ],
-  "gis" : [ "Maestro", "Alibi" ]
+  "gis" : [ "Maestro", "Alibi" ],
+  "gsutr" : [ "Clash" ]
 }
