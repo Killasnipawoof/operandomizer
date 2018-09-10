@@ -3,8 +3,10 @@ exports.run = (client, message, args, isAtk) => {
   blacklisted_ctus = [];
   blacklisted_ops = [];
 
+  // select the appropriate CTU list
   ctulist = isAtk ? client.attackers : client.defenders;
 
+  // determine if a given argument is a CTU or not
   isCTU = function(arg) {
     keys = Object.keys(ctulist);
     for (i = 0; i < keys.length; i++) {
@@ -27,11 +29,13 @@ exports.run = (client, message, args, isAtk) => {
 
   // process the arguments
   else {
+    console.log(args); // TODO this doesn't see the last element when args.length >= 3
     for (i = 0; i < args.length; i++) {
       arg = args[i].toLowerCase();
+      console.log(arg);
 
       // add blacklist args to blacklist
-      if (arg.startsWith("-")) { // TODO this doesn't see the last element for some reason
+      if (arg.startsWith("-")) {
         stripped = arg.substring(1); // strip leading '-'
         if (isCTU(stripped)) {
           blacklisted_ctus.push(stripped);
