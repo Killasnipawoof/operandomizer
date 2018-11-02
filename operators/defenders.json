@@ -1,5 +1,5 @@
 {
-  "other" : [ "Recruit" ],
+  "other" : [ "Recruit SAS", "Recruit FBI", "Recruit GIGN", "Recruit GSG9", "Recruit Spetsnaz" ],
   "sas" : [ "Smoke", "Mute" ],
   "fbi" : [ "Castle", "Pulse" ],
   "gign" : [ "Doc", "Rook" ],
