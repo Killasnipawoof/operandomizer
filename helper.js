@@ -20,7 +20,7 @@ exports.run = (client, message, args, isAtk) => {
 
       // handle the 'default' CTU
       if (ctu === "default") {
-        let defaultCTUs = [ "other", "sas", "fbi", "gign", "spetsnaz", "gsg9" ];
+        let defaultCTUs = [ "rec", "sas", "fbi", "gign", "spetsnaz", "gsg9" ];
         for (j = 0; j < defaultCTUs.length; j++) {
           ctu = defaultCTUs[j];
           ctuOps = ctulist[ctu];

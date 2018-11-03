@@ -5,5 +5,5 @@ exports.run = (client, message, args) => {
     + "operator from \"Tom Clancy's Rainbow Six: Siege.\"\nTo select a random "
     + "attacker, say `" + client.config.prefix + "atk`.\nTo select a random defender, "
     + "say `" + client.config.prefix + "def`.\nFor more detailed instructions, visit "
-    + "https://github.com/5donuts/operandomizer#operandomizer");
+    + "https://github.com/Killasnipawoof/operandomizer");
 }
