@@ -57,10 +57,11 @@ Note that commands that take CTU code(s) (Optional) as an argument can be given
 
 ## CTU Codes
 The following is a table of CTUs and the corresponding codes used in the `atk` and `def` commands.
+Note: I have added the recruit in as a seperate CTU, as if you just want to play recruit, you can randomize only for recruits
 
 | CTU | Code |
 | --- | ---- |
-| Recruit | `other`
+| Recruit | `rec`
 | SAS | `sas`
 | FBI SWAT | `fbi`
 | GIGN | `gign`
