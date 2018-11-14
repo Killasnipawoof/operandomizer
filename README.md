@@ -76,6 +76,7 @@ Note: I have added the recruit in as a seperate CTU, as if you just want to play
 | GROM | `grom`
 | 707th SMB | `smb`
 | CBRN | `cbrn`
+| GIGR | `gigr`
 
 
 ## Copyright Information
