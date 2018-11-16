@@ -23,7 +23,6 @@ Client.bot.on("ready", () => {
   });
   // log ready
   console.log("Operandomizer is ready.");
-  console.log('Server is listening on port ' + server.port);
 });
 
 Client.bot.on("message", (message) => {
