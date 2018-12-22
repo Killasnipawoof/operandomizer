@@ -75,7 +75,9 @@ Note: I have added the recruit in as a seperate CTU, as if you just want to play
 | SDU | `sdu`
 | GROM | `grom`
 | 707th SMB | `smb`
-| CBRN | `cbrn`
+| CBRN (ATK only)| `cbrn`
+| GIS (DEF only| 'gis'
+| GSUTR | 'gsutr'
 | GIGR | `gigr`
 
 
