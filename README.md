@@ -5,7 +5,7 @@ A Discord bot to randomly select an operator from "Tom Clancy's Rainbow Six:
 ## Adding this bot to your server
 I have deployed this bot to a free-tier Heroku account.
 To add this bot to your server, visit
-[https://discordapp.com/oauth2/authorize?client_id=439500818320719882&scope=bot](https://discordapp.com/oauth2/authorize?client_id=439500818320719882&scope=bot).
+[https://discordapp.com/oauth2/authorize?client_id=508023219941408779&scope=bot](https://discordapp.com/oauth2/authorize?client_id=439500818320719882&scope=bot).
 
 Note that a free-tier Heroku account only receives 550 hours (approx. 21 days)
   of uptime per month.
