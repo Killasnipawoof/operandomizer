@@ -15,5 +15,6 @@
   "smb" : [ "Vigil" ],
   "gis" : [ "Maestro", "Alibi" ],
   "gsutr" : [ "Clash" ],
-  "gigr" : [ "Kaid" ]
+  "gigr" : [ "Kaid" ],
+  "sasr" : [ "Mozzie" ]
 }
