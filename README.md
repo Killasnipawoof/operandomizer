@@ -79,6 +79,7 @@ Note: I have added the recruit in as a seperate CTU, as if you just want to play
 | GIS (DEF only)| 'gis'
 | GSUTR | 'gsutr'
 | GIGR | `gigr`
+| SASR | 'sasr'
 
 
 ## Copyright Information
