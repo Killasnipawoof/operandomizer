@@ -3,7 +3,7 @@
   "sas" : [ "Smoke", "Mute", "SAS Recruit" ],
   "fbi" : [ "Castle", "Pulse", "FBI Recruit" ],
   "gign" : [ "Doc", "Rook", "GIGN Recruit" ],
-  "spetsnaz" : [ "Kapkan", "Tachanka", "Spetznaz Recruit" ],
+  "spetsnaz" : [ "Kapkan", "Tachanka", "Spetsnaz Recruit" ],
   "gsg9" : [ "Jäger", "Bandit", "GSG9 Recruit" ],
   "jtf2" : [ "Frost" ],
   "seals" : [ "Valkyrie" ],
