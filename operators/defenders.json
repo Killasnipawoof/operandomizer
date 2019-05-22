@@ -16,5 +16,6 @@
   "gis" : [ "Maestro", "Alibi" ],
   "gsutr" : [ "Clash" ],
   "gigr" : [ "Kaid" ],
-  "sasr" : [ "Mozzie" ]
+  "sasr" : [ "Mozzie" ],
+  "secsrv" : [ "Warden" ]
 }
