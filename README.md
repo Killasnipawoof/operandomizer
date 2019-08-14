@@ -80,8 +80,8 @@ Note: I have added the recruit in as a seperate CTU, as if you just want to play
 | GSUTR | `gsutr`
 | GIGR | `gigr`
 | SASR | `sasr`
-| Jaeger Corps (ATK only)| 'jcorps'
-| Secret Service (DEF only)| 'secsrv'
+| Jaeger Corps (ATK only)| `jcorps`
+| Secret Service (DEF only)| `secsrv`
 
 
 ## Copyright Information
