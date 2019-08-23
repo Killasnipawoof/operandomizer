@@ -17,5 +17,6 @@
   "gsutr" : [ "Clash" ],
   "gigr" : [ "Kaid" ],
   "sasr" : [ "Mozzie" ],
-  "secsrv" : [ "Warden" ]
+  "secsrv" : [ "Warden" ],
+  "fes" : [ "Goyo" ]
 }
