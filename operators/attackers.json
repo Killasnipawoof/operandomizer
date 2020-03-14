@@ -18,5 +18,7 @@
   "gigr" : [ "Nomad" ],
   "sasr" : [ "Gridlock" ],
   "jcorps" : [ "Nokk" ],
-  "apca" : [ "Amaru" ]
+  "apca" : [ "Amaru" ],
+  "nighthaven" : [ "Kali" ],
+  "reu" : [ "Iana" ]
 }

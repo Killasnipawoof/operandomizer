@@ -18,5 +18,7 @@
   "gigr" : [ "Kaid" ],
   "sasr" : [ "Mozzie" ],
   "secsrv" : [ "Warden" ],
-  "fes" : [ "Goyo" ]
+  "fes" : [ "Goyo" ],
+  "nighthaven" : [ "Wamai" ],
+  "unaffil" : [ "Oryx" ]
 }
